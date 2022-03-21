@@ -1,0 +1,44 @@
+@charset "UTF-8";
+*/ {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+h1 {
+    font: italic normal 3em 'Comfortaa', cursive;;
+    text-align: center;
+    margin-top: 100px;   
+    color: azure;
+    
+}
+section {
+    background-color: rgba(240, 248, 255, 0.884);
+    width: 600px;
+    margin:auto;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+}
+div {
+    text-align: center;
+    font: 500 1.3em 'Montserrat', sans-serif;
+    padding: 20px;
+}
+p {
+    text-align: center;
+    font: normal 1.5em 'Montserrat', sans-serif;
+
+}
+.psection {
+    text-align: center;
+    font: italic normal 1.5em 'Montserrat', sans-serif, serif;
+    
+}
+#manha {
+    margin-left: 203px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    
+}

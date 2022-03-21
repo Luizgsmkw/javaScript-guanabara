@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        .if {
+            color: rgb(247, 3, 3);
+        }
+        .else {
+            color: rgb(28, 179, 28);
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>Sistemas de multa</h1>
+        Velocidade do carro: <input type="number" name="velocidade" id="velocidade"> km/h
+        <input type="button" value="verificar" onclick="analiseVelocidade()">
+        <div id="res">Resultado da consulta</div>
+        
+    
+    <script>
+        function analiseVelocidade() {
+            let vel = window.document.getElementById("velocidade")
+            let resp = window.document.getElementById("res")
+            let n1 = Number(vel.value)
+            resp.innerHTML = `<p>Sua velocidade é de<strong>${n1}km/h</strong></p>`
+            if(n1 >= 60) {
+                resp.innerHTML += `<p class= "if">Você ultrapassou a velocidade permitida, uma multa foi emitida</p>`
+            } else {
+                resp.innerHTML += `<p class= "else">Você estava dentro da velocidade permitida</p>`
+            }
+            resp.innerHTML += `<p>Use sempre cinto de segurança</p>  `
+        }
+    </script>
+    </body>
+   
+</html>
