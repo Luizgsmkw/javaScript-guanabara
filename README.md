@@ -1,2 +1,2 @@
 # javaScript-guanabara
- Curso de JavaScript 
+ Curso JavaScript
